@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavBar.master.cs" Inherits="CANTEEN_FEEDBACK.NavBar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--Bootstrap CSS--%>
+    <link href="Bootstrap/CSS/bootstrap.min.css" rel="stylesheet" />
+    <%--Jquery--%>
+    <script src="Bootstrap/JS/jquery-3.2.1.slim.min.js"></script>
+    <%--Popper JS--%>
+    <script src="Bootstrap/JS/popper.min.js"></script>
+    <%--Bootstrap JS--%>
+    <script src="Bootstrap/JS/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark text-uppercase font-weight-bold" style="background-color: #28313B">
+                <img src="Images/Logo_of_MAS_Holdings.png" width="80" height="30" />
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    area-expanded="false" area-label="Toggle navigation" href="HomePage.aspx">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="FeedbackPage.aspx">Feedback</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="LoginPage.aspx">Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--Main Content Placeholder-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Main Content Placeholder-->
+
+    </form>
+</body>
+</html>

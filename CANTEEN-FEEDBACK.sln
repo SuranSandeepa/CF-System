@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CANTEEN-FEEDBACK", "CANTEEN-FEEDBACK\CANTEEN-FEEDBACK.csproj", "{C9B5F955-EA20-46E1-972A-7B8B5F14396B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9B5F955-EA20-46E1-972A-7B8B5F14396B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B5F955-EA20-46E1-972A-7B8B5F14396B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B5F955-EA20-46E1-972A-7B8B5F14396B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B5F955-EA20-46E1-972A-7B8B5F14396B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72BDAB17-9624-4481-B482-E3D168339E75}
+	EndGlobalSection
+EndGlobal
