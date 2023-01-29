@@ -67,5 +67,15 @@ namespace CANTEEN_FEEDBACK
                 rbPoor.Checked = false;
             }
         }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtRDate.Text = "";
+            txtREPF.Text = "";
+            rbExcellent.Checked = false;
+            rbGood.Checked = false;
+            rbNeutral.Checked = false;
+            rbPoor.Checked = false;
+        }
     }
 }
