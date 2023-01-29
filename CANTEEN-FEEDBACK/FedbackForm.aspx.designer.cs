@@ -42,49 +42,49 @@ namespace CANTEEN_FEEDBACK
         protected global::System.Web.UI.WebControls.DropDownList dwMeal;
 
         /// <summary>
-        /// RadioButton1 control.
+        /// rbExcellent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
+        protected global::System.Web.UI.WebControls.RadioButton rbExcellent;
 
         /// <summary>
-        /// RadioButton2 control.
+        /// rbGood control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
+        protected global::System.Web.UI.WebControls.RadioButton rbGood;
 
         /// <summary>
-        /// RadioButton3 control.
+        /// rbNeutral control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton3;
+        protected global::System.Web.UI.WebControls.RadioButton rbNeutral;
 
         /// <summary>
-        /// RadioButton4 control.
+        /// rbPoor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton4;
+        protected global::System.Web.UI.WebControls.RadioButton rbPoor;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// dwReason control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList dwReason;
 
         /// <summary>
         /// btnRSave control.

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NavBar.Master" AutoEventWireup="true" CodeBehind="FedbackForm.aspx.cs" Inherits="CANTEEN_FEEDBACK.FedbackForm" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NavBar.Master" AutoEventWireup="true" CodeBehind="FedbackForm.aspx.cs" Inherits="CANTEEN_FEEDBACK.FedbackForm" EnableEventValidation="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!--===== Background CSS =====-->
@@ -10,6 +10,10 @@
             color: black;
             font-weight: bolder;
             font-size:20px;
+        }
+        .emojis{
+            color:white;
+            font-size:23px;
         }
 
         .row {
@@ -56,7 +60,7 @@
         }
 
         .rb{
-           font-size:20px;
+           font-size:15px;
         }
     </style>
 
@@ -104,16 +108,16 @@
                         <div class="form-row">
                             <div class="col-lg-8">
                                 <span>තෝරන්න :</span><br />
-                                &nbsp;&nbsp;<asp:RadioButton ID="RadioButton1" GroupName="feedback" class="rb" Text="ඉතා හොදයි &#128515;" runat="server" /><br />
-                                &nbsp;&nbsp;<asp:RadioButton ID="RadioButton2" GroupName="feedback" class="rb" Text="හොදයි &#128522;" runat="server" /><br />
-                                &nbsp;&nbsp;<asp:RadioButton ID="RadioButton3" GroupName="feedback" class="rb" Text="සාමාන්‍යයි &#128577;" runat="server" /><br />
-                                &nbsp;&nbsp;<asp:RadioButton ID="RadioButton4" GroupName="feedback" class="rb" Text="වැඩි දියුනු විය යුතුයි &#128577;" runat="server" />
+                                &nbsp;&nbsp;<asp:RadioButton ID="rbExcellent" GroupName="feedback" class="rb" Text="ඉතා හොදයි/மிகவும் நல்லது" runat="server" /><span class="emojis">&#128515;</span><br />
+                                &nbsp;&nbsp;<asp:RadioButton ID="rbGood" GroupName="feedback" class="rb" Text="හොදයි/நல்ல" runat="server" /><span class="emojis">&#128522;</span><br />
+                                &nbsp;&nbsp;<asp:RadioButton ID="rbNeutral" GroupName="feedback" class="rb" Text="සාමාන්‍යයි/பொதுவாக நல்லது" runat="server" /><span class="emojis">&#128578;</span><br />
+                                &nbsp;&nbsp;<asp:RadioButton ID="rbPoor" GroupName="feedback" class="rb" Text="වැඩි දියුනු විය යුතුයි/மேம்படுத்த வேண்டும்" runat="server" /><span class="emojis">&#128577;</span>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
                                 <span>හේතුව :</span>
-                                <asp:DropDownList ID="DropDownList1" class="form-control my-1 p-1" runat="server">
+                                <asp:DropDownList ID="dwReason" class="form-control my-1 p-1" runat="server">
                                     <asp:ListItem>රසය මදිය</asp:ListItem>
                                     <asp:ListItem>ව්‍යන්ජන ගැලපෙන්නෙ නැත</asp:ListItem>
                                     <asp:ListItem>ලුනු මදිය</asp:ListItem>
@@ -124,12 +128,9 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-
-                        <br />
-
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <asp:Button ID="btnRSave" class="Rsave mt-3 mb-5" runat="server" Text="Save" />
+                                <asp:Button ID="btnRSave" class="Rsave mt-3 mb-5" runat="server" Text="Save" OnClick="btnRSave_Click" />
                                 <asp:Button ID="btnCancel" class="Rsave mt-3 mb-5" runat="server" Text="Cancel" />
                             </div>
                         </div>
