@@ -1,4 +1,4 @@
-<h1 align="center"> CANTEEN FEEDBACK - Web Application </h1>
+<h1 align="center"> CANTEEN SYSTEM - Web Application </h1>
 
 <table>
   <tr>
